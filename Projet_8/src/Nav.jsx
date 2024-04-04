@@ -4,19 +4,19 @@ const naviguations = [
     'A Propos'
 ]
 
-function Nav() {
-    return <div>
+export default function Nav() {
+    return <div className="organ-nav">
     <img src={logo}></img>
     <div>
         <ul>
             {naviguations.map(naviguation => (<li key={naviguation}>{naviguation}</li>))}
         </ul>
     </div>
+    </div>   
+}
 
-    </div>
 
-    
-  }
   
-  export default Nav
+
+
   
